@@ -64,6 +64,7 @@ func getStatusOk(c *gin.Context) {
 func main() {
 	router := gin.Default()
 	router.GET("/ok", getStatusOk)
+	router.GET("/", getStatusOk)
 	router.GET("/albums", getAlbums)
 	router.GET("/albums/:id", getAlbumByID)
 	router.POST("/albums", postAlbums)

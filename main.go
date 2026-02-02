@@ -68,6 +68,7 @@ func main() {
 	router.GET("/albums", getAlbums)
 	router.GET("/albums/:id", getAlbumByID)
 	router.POST("/albums", postAlbums)
+	router.StaticFile("/favicon.ico", "./SNF_Logo.ico")
 
 	router.Run("0.0.0.0:8080")
 }
